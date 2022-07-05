@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+body, .body{
+background-color:#E5E5E5;
+}
+.blue{
+  background-color:#14213D;
+}
+.text-blue{
+  color:#14213D;
+}
+
+.card img{
+height:70%;
+  overflow:hidden;
+}
+
+.modal-fullscreen{
+  width:100vw;
+  max-width:none;
+  height:300px;
+  margin:0;
+}
+
+body, html {
+  height: 100%;
+}
+
+.full-screen {
+  /* The image used */
+  background-image: url("/assets/img/student.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
