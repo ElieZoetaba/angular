@@ -13,6 +13,18 @@ import { IncriptionComponent } from './incription/incription.component';
 import { FooterComponent } from './footer/footer.component';
 import { AProposComponent } from './a-propos/a-propos.component';
 import { DescriptionComponent } from './description/description.component';
+import {  Routes, RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+
+const appRoutes: Routes =[
+  {path:'', component: MainComponent},
+  {path:'a-propos', component: AProposComponent},
+  {path:'blog', component: BlogComponent},
+  {path:'gallery', component: GalleryComponent},
+  {path:'profesors', component: ProfesorsComponent},
+  {path:'incription', component: IncriptionComponent},
+  {path:'contact', component: ContactComponent},
+]
 
 @NgModule({
   declarations: [
@@ -30,9 +42,12 @@ import { DescriptionComponent } from './description/description.component';
     DescriptionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

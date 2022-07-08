@@ -25,16 +25,13 @@ body, html {
 }
 
 .full-screen {
-  /* The image used */
-  background-image: url("/assets/img/student.jpg");
-
-  /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
+.description{
+  height:450px !important;
+  overflow:hidden;
+}

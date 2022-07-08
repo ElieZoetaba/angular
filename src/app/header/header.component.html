@@ -1,61 +1,123 @@
-<header class="border border-1">
+<header class="">
   <nav class="navbar shadow text-light blue ">
     <div class="container-fluid ">
-      <a class="navbar-brand"></a>
-      <div class="d-flex">
-        <p class="mx-4 p-0"> S'inscrire</p>
-        <p class="mx-4 p-0">Se connecter</p>
-      </div>
-    </div>
-  </nav>
-  <nav class="navbar p-0 navbar-expand-lg bg-light body">
-    <div class="container-fluid">
-      <div class="">
-        <a class="navbar-brand" href="#">Navbar scroll</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="d-flex flex-row-reverse">
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-lg-0 navbar-nav-scroll" style="--bs-scroll-height:100px;">
-            <li class="nav-item">
-              <a class="nav-link active text-blue" aria-current="page" href="#"><p>ACCEUIL</p> </a>
-            </li>
-            <li class="nav-item"><a class="nav-link text-blue" aria-current="page" href="#"><p>A PROPOS</p></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-blue" href="#"><p>BLOG</p></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-blue" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                PAGES
-              </a>
-              <ul class="dropdown-menu blue" aria-labelledby="navbarScrollingDropdown">
-                <li><a class="dropdown-item text-light"href="#"><p>Bibliotheque</p></a></li>
-                <li><a class="dropdown-item text-light" href="#"><p>Dossiers importants</p></a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link text-blue" href="#"><p>CONTACTS</p></a></li>
-          </ul>
-        </div>
+      <a class="navbar-brand text-light"></a>
+      <div class="d-flex p-2">
+        <a class="nav-link" routerLink="/incription">
+          <p class="mx-4 my-0 "> S'inscrire</p>
+        </a>
+        <a class="nav-link" routerLink="/incription">
+          <p class="mx-4 m-0 p-0">Se connecter</p>
+        </a>
       </div>
     </div>
   </nav>
 
-  <div class="container-fluid full-screen">
-    <h1 class="lead text-center">AWESOME BUSINESS TEMPLATE</h1>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/"><span class="text-primary">Logo</span><span class="text-blue">Lycee
+        Wend-Puire Saaba</span></a>
+      
+      <div class="d-flex flex-row-reverse">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-blue" aria-current="page" routerLink="/">ACCEUIL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-blue" routerLink="/a-propos">A PROPOS</a>
+          </li>
+          <a class="nav-link text-blue" routerLink="/blog">BLOG
+          </a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-blue" routerLink="#">Bibliotheque</a></li>
+              <li><a class="dropdown-item text-blue" routerLink="#">Fichiers importants</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-blue" routerLink="/contact">CONTACTS</a>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler mx-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    </div>
+  </nav>
+
+  <!-- <nav class="navbar p-0 navbar-expand-lg bg-light body">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/"><span class="text-primary">Logo</span><span class="text-blue">Lycee
+            Wend-Puire Saaba</span> </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+      <!-- <div class="d-flex flex-row-reverse">
+        <div class="collapse navbar-collapse" id="#navbarSupportedContent">
+          <ul class="navbar-nav me-auto my-lg-0 navbar-nav-scroll" style="--bs-scroll-height:150px;">
+            <li class="nav-item">
+              <a class="nav-link active text-blue" aria-current="page" routerLink="/">
+                <p>ACCEUIL</p>
+              </a>
+            </li>
+            <li class="nav-item"><a class="nav-link text-blue" aria-current="page" routerLink="/a-propos">
+                <p>A PROPOS</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-blue" routerLink="/blog">
+                <p>BLOG</p>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-blue" routerLink="#" id="navbarScrollingDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                PAGES
+              </a>
+              <ul class="dropdown-menu blue" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item text-light" routerLink="#">
+                    <p>Bibliotheque</p>
+                  </a></li>
+                <li><a class="dropdown-item text-light" routerLink="#">
+                    <p>Dossiers importants</p>
+                  </a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link text-blue" routerLink="/contact">
+                <p>CONTACTS</p>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+
+  <div class="container-fluid ">
+    <picture>
+      <source srcset="..." type="image/svg+xml">
+      <img src="/assets/img/student.jpg" class="img-fluid img-thumbnail" alt="...">
+    </picture>
+  </div>
+
+  <!-- <h1 class="lead text-center">AWESOME BUSINESS TEMPLATE</h1>
     <p class="tagline text-center">PROGRESSUS PRO: Ultimate business site template based on Twitter Bootstrap, by <a
-        href="https://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">GetTemplate</a>
+        routerLink="https://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">GetTemplate</a>
     </p>
     <p class="text-center">
       <a class="btn btn-default btn-lg"
-        href="https://www.gettemplate.com/pro/progressus.html?utm_source=head_info&amp;utm_medium=template&amp;utm_campaign=progressus">MORE
+        routerLink="https://www.gettemplate.com/pro/progressus.html?utm_source=head_info&amp;utm_medium=template&amp;utm_campaign=progressus">MORE
         INFO</a>
       <a class="btn btn-action btn-lg"
-        href="https://www.gettemplate.com/pro/progressus.html?utm_source=head_buy&amp;utm_medium=template&amp;utm_campaign=progressus">BUY
+        routerLink="https://www.gettemplate.com/pro/progressus.html?utm_source=head_buy&amp;utm_medium=template&amp;utm_campaign=progressus">BUY
         NOW FOR $19</a>
     </p>
-  </div>
+  </div> -->
 </header>
